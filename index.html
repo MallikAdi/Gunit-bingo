@@ -9,31 +9,47 @@
   <body>
     <div class="header">Gunit Bingo</div>
     <div class="container">
-      <form>
+      <form id="bingo-form">
         <div class="input-box">
-          <span>Enter your name</span>
-          <input type="text" placeholder="AxshyDa123" />
-          <span className="Question"
+          <label for="name">Enter your name</label>
+          <input type="text" id="name" name="name" placeholder="AxshyDa123" />
+          <span class="Question"
             >How many times is Punit gonna cry this Quark?</span
           >
         </div>
 
         <div class="choice-container">
-          <div class="image-container">
+          <div
+            class="image-container"
+            data-image="0"
+            onclick="selectImage('0')"
+          >
             <img src="assets/punit3.png" alt="" />
-            <p className="Number">0</p>
+            <p class="Number">0</p>
           </div>
-          <div class="image-container">
+          <div
+            class="image-container"
+            data-image="1"
+            onclick="selectImage('1')"
+          >
             <img src="assets/punit5.png" alt="" />
-            <p className="Number">1</p>
+            <p class="Number">1</p>
           </div>
-          <div class="image-container">
+          <div
+            class="image-container"
+            data-image="2"
+            onclick="selectImage('2')"
+          >
             <img src="assets/punit2.png" alt="" />
-            <p className="Number">2</p>
+            <p class="Number">2</p>
           </div>
-          <div class="image-container">
+          <div
+            class="image-container"
+            data-image="3"
+            onclick="selectImage('3')"
+          >
             <img src="assets/punit4.png" alt="" />
-            <p className="Number">3</p>
+            <p class="Number">3</p>
           </div>
         </div>
         <button>Submit</button>
